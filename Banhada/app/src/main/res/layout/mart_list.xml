@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/rb_address_mart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:textColor="#4B4A4A"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:theme="@style/CustomRadioButton" />
+
+    <Button
+        android:id="@+id/btn_delete_mart"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="0dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="삭제"
+        android:textColor="#4B4A4A" />
+
+</LinearLayout>
+

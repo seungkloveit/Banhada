@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.banhada.Banhada_FirstScreen">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/banhada_logo"
+        android:layout_margin="20dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/button10"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="일반회원으로 로그인"
+        android:backgroundTint="#A4C480"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:text="네이버회원으로 로그인"
+        android:backgroundTint="#2DB400"/>
+
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#A4C480</item>
+        <item name="colorAccent">#4B4A4A</item>
+    </style>
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#000000</item>
+        <!--        <item name="android:textStyle">bold</item>-->
+        <item name="android:textColorPrimary">#000000</item>
+    </style>
+    <style name="CustomRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#A4C480</item>
+        <item name="colorControlNormal">#A4C480</item>
+    </style>
+
+</resources>

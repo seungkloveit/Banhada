@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.banhada_mart.MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_mart_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="마트앱 주문관리화면" />
+    <Button
+        android:id="@+id/btn_mart_myinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="마트앱 내정보관리화면" />
+
+</LinearLayout>

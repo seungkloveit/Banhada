@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.banhada">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.banhada.MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.banhada.ShippingActivity" />
+        <activity android:name="com.banhada.Shipping2Activity" />
+        <activity android:name="com.banhada.MartActivity" />
+        <activity android:name="com.banhada.Mart2Activity" />
+        <activity android:name="com.banhada.Mart3Activity" />
+        <activity android:name="com.banhada.Food" />
+        <activity android:name="com.banhada.NaverLogin" />
+        <activity android:name="com.banhada.NormalUser_SignUp" />
+        <activity android:name="com.banhada.Payment_Phone" />
+        <activity android:name="com.banhada.Payment_BankBook" />
+        <activity android:name="com.banhada.Payment_CreditCard" />
+        <activity android:name="com.banhada.PaymentProcess2" />
+        <activity android:name="com.banhada.Payment" />
+        <activity android:name="com.banhada.Banhada_FirstScreen" />
+        <activity android:name="com.banhada.SignUp_Complete" />
+        <activity android:name="com.banhada.User_Product" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
