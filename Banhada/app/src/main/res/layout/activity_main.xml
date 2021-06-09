@@ -4,42 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.banhada.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.banhada.MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/banhada_logo"
+        android:layout_margin="20dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="200dp" />
 
-        <Button
-            android:id="@+id/btn_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="로고 화면" />
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/button10"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="일반회원으로 로그인"
+        android:backgroundTint="#A4C480"
+        android:textColor="#000000"/>
 
-        <Button
-            android:id="@+id/btn_product_click"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="상품클릭 화면" />
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:text="네이버회원으로 로그인"
+        android:backgroundTint="#2DB400"/>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/btn_shipping"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="배송지입력 화면" />
-
-        <Button
-            android:id="@+id/btn_mart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="마트검색 화면" />
-    </LinearLayout>
 
 </LinearLayout>

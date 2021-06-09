@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.banhada_mart.MartOrderActivity"/>
-        <activity android:name="com.banhada_mart.MartAdmin_MyInfo"/>
-        <activity android:name="com.banhada_mart.MartHaveMaterials"/>
+        <activity android:name="com.banhada_mart.order.MartOrderActivity"/>
+        <activity android:name="com.banhada_mart.myinfo.MartAdmin_MyInfo"/>
+        <activity android:name="com.banhada_mart.myinfo.MartHaveMaterials"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 

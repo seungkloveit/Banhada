@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.banhada.SignUp_Complete">
+    tools:context="com.banhada.login.SignUp_Complete">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -18,14 +18,23 @@
         tools:layout_editor_absoluteY="76dp" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="飯하다에 오신 것을 환영합니다 :)\n\n\n\n 나만의 커스터마이징 밀키트를 \n만나러 가볼까요?\n\n"
         android:textAlignment="center"
         android:textSize="25sp"
         android:textColor="#000000"
-        android:gravity="center_horizontal" />
+        android:layout_marginLeft="37dp"
+        android:text="飯하다에 오신 것을 환영합니다 :)"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n\n\n\n 나만의 커스터마이징 밀키트를 \n만나러 가볼까요?\n\n"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"/>
 
     <Button
         android:id="@+id/button9"

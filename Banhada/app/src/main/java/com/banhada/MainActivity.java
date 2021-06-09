@@ -6,52 +6,45 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
+import com.banhada.login.NaverLogin;
+import com.banhada.login.NormalUser_SignUp;
 import com.example.banhada.R;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    ImageView imageView;
+    Button button10,button11;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn_logo=(Button)findViewById(R.id.btn_logo);
-        Button btn_product_click=(Button)findViewById(R.id.btn_product_click);
-        Button btn_pay=(Button)findViewById(R.id.btn_pay);
-        Button btn_shipping=(Button)findViewById(R.id.btn_shipping);
-        Button btn_mart=(Button)findViewById(R.id.btn_mart);
+        imageView=findViewById(R.id.imageView);
+        button10=findViewById(R.id.button10);
+        button11=findViewById(R.id.button11);
 
-        btn_logo.setOnClickListener(new View.OnClickListener() {
+
+        button10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(), Banhada_FirstScreen.class);
-                startActivity(intent);
-            }
-        });
-        btn_product_click.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(), User_Product.class);
+                // 일반 사용자 로그인 시 로그인 화면으로 전환되는 인텐트 작성
+                Intent intent = new Intent(MainActivity.this, NormalUser_SignUp.class);
                 startActivity(intent);
             }
         });
 
-        btn_shipping.setOnClickListener(new View.OnClickListener() {
+        button11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(), ShippingActivity.class);
+                // 네이버 로그인 시 네이버 로그인 화면으로 전환되는 인텐트 작성ㄴㄴ
+                // 네이버 로그인 API를 여기다 연결해야 하나?
+                Intent intent = new Intent(MainActivity.this, NaverLogin.class);
                 startActivity(intent);
             }
         });
-        btn_mart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(), MartActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
     }
 }

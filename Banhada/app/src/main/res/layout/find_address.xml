@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.banhada.DaumWebViewActivity">
+    tools:context="com.banhada.shipping.DaumWebViewActivity">
 
     <WebView
         android:id="@+id/webView_address"

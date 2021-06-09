@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.banhada_mart.myinfo.MartAdmin_MyInfo;
+import com.banhada_mart.order.MartOrderActivity;
 import com.example.banhada_mart.R;
 
 public class MainActivity extends AppCompatActivity {

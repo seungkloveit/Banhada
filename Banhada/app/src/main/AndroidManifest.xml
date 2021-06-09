@@ -17,22 +17,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.banhada.ShippingActivity" />
-        <activity android:name="com.banhada.Shipping2Activity" />
-        <activity android:name="com.banhada.MartActivity" />
-        <activity android:name="com.banhada.Mart2Activity" />
-        <activity android:name="com.banhada.Mart3Activity" />
-        <activity android:name="com.banhada.Food" />
-        <activity android:name="com.banhada.NaverLogin" />
-        <activity android:name="com.banhada.NormalUser_SignUp" />
-        <activity android:name="com.banhada.Payment_Phone" />
-        <activity android:name="com.banhada.Payment_BankBook" />
-        <activity android:name="com.banhada.Payment_CreditCard" />
-        <activity android:name="com.banhada.PaymentProcess2" />
-        <activity android:name="com.banhada.Payment" />
-        <activity android:name="com.banhada.Banhada_FirstScreen" />
-        <activity android:name="com.banhada.SignUp_Complete" />
-        <activity android:name="com.banhada.User_Product" />
+        <activity android:name="com.banhada.shipping.ShippingActivity" />
+        <activity android:name="com.banhada.shipping.Shipping2Activity" />
+        <activity android:name="com.banhada.mart.MartActivity" />
+        <activity android:name="com.banhada.mart.Mart2Activity" />
+        <activity android:name="com.banhada.mart.Mart3Activity" />
+        <activity android:name="com.banhada.product.Food" />
+        <activity android:name="com.banhada.login.NaverLogin" />
+        <activity android:name="com.banhada.login.NormalUser_SignUp" />
+        <activity android:name="com.banhada.payment.Payment_Phone" />
+        <activity android:name="com.banhada.payment.Payment_BankBook" />
+        <activity android:name="com.banhada.payment.Payment_CreditCard" />
+        <activity android:name="com.banhada.payment.PaymentProcess2" />
+        <activity android:name="com.banhada.payment.Payment" />
+        <activity android:name="com.banhada.HomeActivity" />
+        <activity android:name="com.banhada.login.SignUp_Complete" />
+        <activity android:name="com.banhada.product.User_Product" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 

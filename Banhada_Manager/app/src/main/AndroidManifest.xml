@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.banhada_manager.AdminOrderActivity"/>
-        <activity android:name="com.banhada_manager.RegisteredMart_Admin"/>
+        <activity android:name="com.banhada_manager.order.AdminOrderActivity"/>
+        <activity android:name="com.banhada_manager.mart.RegisteredMart_Admin"/>
 
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
