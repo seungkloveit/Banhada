@@ -49,10 +49,12 @@ public class MealKitListAdapter extends BaseAdapter {
         }
         final ImageView kit_img=convertView.findViewById(R.id.kit_img);
         final TextView tv_kit_name=convertView.findViewById(R.id.tv_kit_name);
+        final TextView tv_kit_price=convertView.findViewById(R.id.tv_kit_price);
         final MealKitListItem mealKitListItem =meal_kit_item.get(position);
 
         kit_img.setImageResource(mealKitListItem.getImgView());
         tv_kit_name.setText(mealKitListItem.getText1());
+        tv_kit_price.setText(mealKitListItem.getText2());
 
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +70,8 @@ public class MealKitListAdapter extends BaseAdapter {
                 byte[] byteArray=stream.toByteArray();
 
                 Intent intent = new Intent(context, Food.class);
-                intent.putExtra("String", tv_kit_name.getText());
+                intent.putExtra("name", tv_kit_name.getText());
+                intent.putExtra("price", tv_kit_price.getText());
                 intent.putExtra("integer", 300);
                 intent.putExtra("double", 3.141592);
                 intent.putExtra("image", byteArray);

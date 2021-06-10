@@ -44,6 +44,10 @@ public class PaymentProcess2 extends AppCompatActivity {
         payment_bankbookbtn=findViewById(R.id.payment_bankbookbtn);
         payment_phonebtn=findViewById(R.id.payment_phonebtn);
 
+        //결제금액 받아오기
+        Bundle extras=getIntent().getExtras();
+        final String total_price=extras.getString("total_price");
+
         payment_creditbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,7 +68,9 @@ public class PaymentProcess2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent3 = new Intent(PaymentProcess2.this, Payment_Phone.class);
+                intent3.putExtra("total_price", total_price); //받은 값 Payment_Phone.java로 다시 보냄
                 startActivity(intent3);
+
             }
         });
 

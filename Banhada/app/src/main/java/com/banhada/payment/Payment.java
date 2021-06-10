@@ -13,12 +13,13 @@ import android.widget.TextView;
 
 import com.banhada.HomeActivity;
 import com.banhada.MainActivity;
+import com.banhada.shipping.ShippingActivity;
 import com.example.banhada.R;
 
 public class Payment extends AppCompatActivity {
 
     TextView textView2, textView8, textView10;
-    Button payment_btn, moreshopping_btn;
+    Button payment_btn, moreshopping_btn, change_shipping;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,11 +43,17 @@ public class Payment extends AppCompatActivity {
 //        textView10 = findViewById(R.id.textView10);
         payment_btn = findViewById(R.id.payment_btn);
         moreshopping_btn = findViewById(R.id.moreshopping_btn);
+        change_shipping = findViewById(R.id.change_shipping);
+
+        //결제금액 받아오기
+        Bundle extras=getIntent().getExtras();
+        final String total_price=extras.getString("total_price");
 
         payment_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Payment.this, PaymentProcess2.class);
+                intent.putExtra("total_price", total_price); //받은 값 PaymentProfcess2.java로 보냄
                 startActivity(intent);
             }
         });
@@ -57,6 +64,16 @@ public class Payment extends AppCompatActivity {
                 finish();
             }
         });
+        change_shipping.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Payment.this, ShippingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
 
 
     }
