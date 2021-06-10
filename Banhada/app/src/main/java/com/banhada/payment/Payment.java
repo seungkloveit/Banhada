@@ -1,9 +1,12 @@
 package com.banhada.payment;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -14,24 +17,31 @@ import com.example.banhada.R;
 
 public class Payment extends AppCompatActivity {
 
-    TextView textView2,textView8,textView10;
-    Button payment_btn,moreshopping_btn;
+    TextView textView2, textView8, textView10;
+    Button payment_btn, moreshopping_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         //DB업데이트 시 칼럼 추가하는 코드
         // onUpgrade 함수에 db.execSQL("ALTER TABLE"+테이블명+"ADD COLUMN"+컬럼명+컬럼형식);
 
         //내 배송지 정보=>DB에서 끌고오기?
 
-        textView2=findViewById(R.id.textView2);
-        textView8=findViewById(R.id.textView8);
-        textView10=findViewById(R.id.textView10);
-        payment_btn=findViewById(R.id.payment_btn);
-        moreshopping_btn=findViewById(R.id.moreshopping_btn);
+//        textView2 = findViewById(R.id.textView2);
+//        textView8 = findViewById(R.id.textView8);
+//        textView10 = findViewById(R.id.textView10);
+        payment_btn = findViewById(R.id.payment_btn);
+        moreshopping_btn = findViewById(R.id.moreshopping_btn);
 
         payment_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,16 +54,20 @@ public class Payment extends AppCompatActivity {
         moreshopping_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Intent로 밀키트 쇼핑 화면 돌아가기
-                Intent intent = new Intent(Payment.this, HomeActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
 
 
-
-
     }
 
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home: {
+                finish();
+            }
+        }
+        return true;
+    }
 
 }

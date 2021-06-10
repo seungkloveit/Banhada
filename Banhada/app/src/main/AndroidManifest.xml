@@ -24,6 +24,7 @@
         <activity android:name="com.banhada.mart.Mart3Activity" />
         <activity android:name="com.banhada.product.Food" />
         <activity android:name="com.banhada.login.NaverLogin" />
+        <activity android:name="com.banhada.login.NormalUser_Login" />
         <activity android:name="com.banhada.login.NormalUser_SignUp" />
         <activity android:name="com.banhada.payment.Payment_Phone" />
         <activity android:name="com.banhada.payment.Payment_BankBook" />

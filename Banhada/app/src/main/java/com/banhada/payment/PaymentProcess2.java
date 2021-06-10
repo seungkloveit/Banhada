@@ -1,9 +1,12 @@
 package com.banhada.payment;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -22,14 +25,21 @@ public class PaymentProcess2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_process2);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
-        textView9=findViewById(R.id.textView9);
-        textView2=findViewById(R.id.textView2);
-        imageView11=findViewById(R.id.imageView11);
-        imageView4=findViewById(R.id.imageView4);
-        imageView=findViewById(R.id.imageView);
-        imageView9=findViewById(R.id.imageView9);
-        view=findViewById(R.id.view);
+
+//        textView9=findViewById(R.id.textView9);
+//        textView2=findViewById(R.id.textView2);
+//        imageView11=findViewById(R.id.imageView11);
+//        imageView4=findViewById(R.id.imageView4);
+//        imageView=findViewById(R.id.imageView);
+//        imageView9=findViewById(R.id.imageView9);
+//        view=findViewById(R.id.view);
         payment_creditbtn=findViewById(R.id.payment_creditbtn);
         payment_bankbookbtn=findViewById(R.id.payment_bankbookbtn);
         payment_phonebtn=findViewById(R.id.payment_phonebtn);
@@ -59,5 +69,14 @@ public class PaymentProcess2 extends AppCompatActivity {
         });
 
 
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home: {
+                finish();
+            }
+        }
+        return true;
     }
 }

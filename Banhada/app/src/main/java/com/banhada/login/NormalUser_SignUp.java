@@ -33,22 +33,22 @@ public class NormalUser_SignUp extends AppCompatActivity {
         actionBar.setDisplayShowTitleEnabled(false);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        view=findViewById(R.id.view);
-        user_name=findViewById(R.id.user_name);
-        user_phone=findViewById(R.id.user_phone);
-        userAddress=findViewById(R.id.userAddress);
-        name_tv=findViewById(R.id.name_tv);
-        email_tv=findViewById(R.id.email_tv);
-        phone_tv=findViewById(R.id.phone_tv);
-        button_address_search=findViewById(R.id.button_address_search);
+//        view=findViewById(R.id.view);
+//        user_name=findViewById(R.id.user_name);
+//        user_phone=findViewById(R.id.user_phone);
+//        userAddress=findViewById(R.id.userAddress);
+//        name_tv=findViewById(R.id.name_tv);
+//        email_tv=findViewById(R.id.email_tv);
+//        phone_tv=findViewById(R.id.phone_tv);
+//        button_address_search=findViewById(R.id.button_address_search);
         button13=findViewById(R.id.button13);
-
-        button_address_search.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // 주소 설정 화면으로 이동 (인텐트)
-            }
-        });
+//
+//        button_address_search.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                // 주소 설정 화면으로 이동 (인텐트)
+//            }
+//        });
 
         button13.setOnClickListener(new View.OnClickListener() {
             @Override

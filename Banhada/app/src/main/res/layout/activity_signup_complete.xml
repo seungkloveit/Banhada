@@ -9,13 +9,11 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_margin="30dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="130dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/party"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="76dp" />
+        app:srcCompat="@drawable/party" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,13 +22,16 @@
         android:textSize="25sp"
         android:textColor="#000000"
         android:layout_marginLeft="37dp"
+        android:layout_marginTop="50dp"
         android:text="飯하다에 오신 것을 환영합니다 :)"/>
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="\n\n\n\n 나만의 커스터마이징 밀키트를 \n만나러 가볼까요?\n\n"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="37dp"
+        android:text="나만의 커스터마이징 밀키트를 \n만나러 가볼까요?"
         android:textSize="25sp"
         android:textColor="#000000"
         android:gravity="center_horizontal"
@@ -39,9 +40,10 @@
     <Button
         android:id="@+id/button9"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:backgroundTint="#A4C480 "
-        android:text="밀키트 쇼핑하기" />
+        android:backgroundTint="#A4C480"
+        android:text="밀키트 쇼핑하러 가기" />
 
 </LinearLayout>

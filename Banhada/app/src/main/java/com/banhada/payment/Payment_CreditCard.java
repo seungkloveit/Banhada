@@ -1,9 +1,12 @@
 package com.banhada.payment;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.ButtonBarLayout;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,23 +30,39 @@ public class Payment_CreditCard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_creditcard);
 
-        view=findViewById(R.id.view);
-        imageView10=findViewById(R.id.imageView10);
-        edt1=findViewById(R.id.edt1);
-        edt2=findViewById(R.id.edt2);
-        edt3=findViewById(R.id.edt3);
-        textView3=findViewById(R.id.textView3);
-        card_number=findViewById(R.id.card_number);
-        card_companyname=findViewById(R.id.card_companyname);
-        payment_way=findViewById(R.id.payment_way);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
+//        view=findViewById(R.id.view);
+//        imageView10=findViewById(R.id.imageView10);
+//        edt1=findViewById(R.id.edt1);
+//        edt2=findViewById(R.id.edt2);
+//        edt3=findViewById(R.id.edt3);
+//        textView3=findViewById(R.id.textView3);
+//        card_number=findViewById(R.id.card_number);
+//        card_companyname=findViewById(R.id.card_companyname);
+//        payment_way=findViewById(R.id.payment_way);
         creditway_btn=findViewById(R.id.creditway_btn);
 
         creditway_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"결제가 완료되었습니다",Toast.LENGTH_LONG);
+                Toast.makeText(getApplicationContext(),"결제가 완료되었습니다",Toast.LENGTH_LONG).show();
             }
         });
 
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home: {
+                finish();
+            }
+        }
+        return true;
     }
 }
