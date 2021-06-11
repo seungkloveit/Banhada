@@ -21,7 +21,7 @@ public class Payment_CreditCard extends AppCompatActivity {
     View view;
     ImageView imageView10;
     EditText edt1,edt2,edt3;
-    TextView textView3,card_number,card_companyname,payment_way;
+    TextView textView3,card_number,card_companyname,payment_way, tv_price_final_cc2;
     Button creditway_btn;
 
 
@@ -47,6 +47,12 @@ public class Payment_CreditCard extends AppCompatActivity {
 //        card_companyname=findViewById(R.id.card_companyname);
 //        payment_way=findViewById(R.id.payment_way);
         creditway_btn=findViewById(R.id.creditway_btn);
+        tv_price_final_cc2=findViewById(R.id.tv_price_final_cc2);
+
+        //결제금액 받아오기
+        Bundle extras=getIntent().getExtras();
+        String total_price=extras.getString("total_price");
+        tv_price_final_cc2.setText(total_price);
 
         creditway_btn.setOnClickListener(new View.OnClickListener() {
             @Override

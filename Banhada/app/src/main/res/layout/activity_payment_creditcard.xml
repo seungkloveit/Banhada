@@ -21,104 +21,221 @@
             android:textColor="#000000"
             android:textSize="20dp" />
     </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
+        <TextView
+            android:id="@+id/tv_price_final_cc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="결제금액"
+            android:textColor="#000000"
+            android:textSize="17dp" />
 
-<!--        <View-->
-<!--            android:id="@+id/view"-->
-<!--            android:layout_width="415dp"-->
-<!--            android:layout_height="80dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:background="#A4C480"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
+        <TextView
+            android:id="@+id/tv_price_final_cc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="24000원"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
-<!--        <TextView-->
-<!--            android:id="@+id/textView3"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="5dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:gravity="center_horizontal"-->
-<!--            android:text="신용카드 결제"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textColor="#000000"-->
-<!--            android:textSize="25dp"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="@+id/imageView10" />-->
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
 
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView10"-->
-<!--            android:layout_width="55dp"-->
-<!--            android:layout_height="45dp"-->
-<!--            android:layout_marginStart="16dp"-->
-<!--            android:layout_marginLeft="16dp"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:srcCompat="@drawable/outline_arrow_back_black_24" />-->
-<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+    <!--        <View-->
+    <!--            android:id="@+id/view"-->
+    <!--            android:layout_width="415dp"-->
+    <!--            android:layout_height="80dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="#A4C480"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView3"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:gravity="center_horizontal"-->
+    <!--            android:text="신용카드 결제"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:textSize="25dp"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="@+id/imageView10" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView10"-->
+    <!--            android:layout_width="55dp"-->
+    <!--            android:layout_height="45dp"-->
+    <!--            android:layout_marginStart="16dp"-->
+    <!--            android:layout_marginLeft="16dp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:srcCompat="@drawable/outline_arrow_back_black_24" />-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
     <TextView
-        android:layout_marginTop="30dp"
         android:id="@+id/card_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="카드 번호 입력"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="카드 번호"
         android:textColor="#000000"
-        android:textSize="25sp"/>
+        android:textSize="17dp" />
 
-    <EditText
-        android:id="@+id/edt1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:orientation="horizontal">
 
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp" />
 
+        <EditText
+            android:id="@+id/edt1_2"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/edt1_3"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:id="@+id/edt1_4"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:inputType="textPassword" />
+    </LinearLayout>
 
     <TextView
+        android:id="@+id/card_expiry_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
-        android:id="@+id/card_companyname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="카드사 입력"
+        android:text="유효기간"
         android:textColor="#000000"
-        android:textSize="25sp"/>
+        android:textSize="17dp" />
 
-    <EditText
-        android:id="@+id/edt2"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:orientation="horizontal">
 
+        <EditText
+            android:id="@+id/edt_valid"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp" />
 
+        <TextView
+            android:id="@+id/tv_slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="/"
+            android:textColor="#6D6969"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/edt_valid2"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
     <TextView
+        android:id="@+id/tv_pwd_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
-        android:id="@+id/payment_way"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="일시불or할부 입력"
+        android:text="비밀번호 앞 2자리"
         android:textColor="#000000"
-        android:textSize="25sp"/>
-
+        android:textSize="17dp" />
     <EditText
-        android:id="@+id/edt3"
+        android:id="@+id/edt_pwd_2"
+        android:layout_width="55dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+    <TextView
+        android:id="@+id/tv_cvc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="CVC 번호"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+    <EditText
+        android:id="@+id/edt_cvc"
+        android:layout_width="75dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/card_companyname"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:text="카드사 입력"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="25sp" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/edt2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/payment_way"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:text="일시불or할부 입력"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="25sp" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/edt3"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center" />-->
 
     <Button
         android:id="@+id/creditway_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:backgroundTint="#A4C480"
-        android:text="신용카드로 결제하기" />
+        android:text="결제하기" />
 
 </LinearLayout>

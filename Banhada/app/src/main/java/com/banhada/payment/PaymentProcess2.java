@@ -52,6 +52,7 @@ public class PaymentProcess2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(PaymentProcess2.this, Payment_CreditCard.class);
+                intent.putExtra("total_price", total_price); //받은 값 Payment_CreditCard.java로 다시 보냄
                 startActivity(intent);
             }
         });
@@ -60,6 +61,7 @@ public class PaymentProcess2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent2 = new Intent(PaymentProcess2.this, Payment_BankBook.class);
+                intent2.putExtra("total_price", total_price); //받은 값 Payment_BankBook.java로 다시 보냄
                 startActivity(intent2);
             }
         });

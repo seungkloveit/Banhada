@@ -6,48 +6,48 @@
     android:layout_height="match_parent"
     android:orientation="vertical">m
 
-<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
 
-<!--        <View-->
-<!--            android:id="@+id/view4"-->
-<!--            android:layout_width="415dp"-->
-<!--            android:layout_height="80dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:background="#A4C480"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
+    <!--        <View-->
+    <!--            android:id="@+id/view4"-->
+    <!--            android:layout_width="415dp"-->
+    <!--            android:layout_height="80dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="#A4C480"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-<!--        <TextView-->
-<!--            android:id="@+id/mutongjang1"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            android:gravity="center_horizontal"-->
-<!--            android:text="무통장 입금"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textColor="#000000"-->
-<!--            android:textSize="25dp"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="1.0"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            tools:layout_editor_absoluteY="23dp"-->
-<!--            tools:ignore="MissingConstraints" />-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/mutongjang1"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:gravity="center_horizontal"-->
+    <!--            android:text="무통장 입금"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:textSize="25dp"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="1.0"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            tools:layout_editor_absoluteY="23dp"-->
+    <!--            tools:ignore="MissingConstraints" />-->
 
-<!--        <ImageView-->
-<!--            android:id="@+id/mutongjang2"-->
-<!--            android:layout_width="55dp"-->
-<!--            android:layout_height="45dp"-->
-<!--            android:layout_marginStart="16dp"-->
-<!--            android:layout_marginLeft="16dp"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:srcCompat="@drawable/outline_arrow_back_black_24" />-->
-<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/mutongjang2"-->
+    <!--            android:layout_width="55dp"-->
+    <!--            android:layout_height="45dp"-->
+    <!--            android:layout_marginStart="16dp"-->
+    <!--            android:layout_marginLeft="16dp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:srcCompat="@drawable/outline_arrow_back_black_24" />-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -64,64 +64,148 @@
             android:textSize="20dp" />
     </androidx.appcompat.widget.Toolbar>
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_price_final_bb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="결제금액"
+            android:textColor="#000000"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv_price_final_bb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="24000원"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
-        android:id="@+id/mutongjang3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="입금계좌 : 신한 111-111-111111 "
-        android:textColor="#000000"
-        android:textSize="25sp"/>
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/mutongjang4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/mutongjang3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계좌 안내"
+            android:textColor="#000000"
+            android:textSize="17dp" />
 
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/bank_logo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="5dp"
+                android:text="110-298-992211"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="#3A3939"/>
+        </LinearLayout>
 
-    <TextView
-        android:layout_marginTop="30dp"
-        android:id="@+id/mutongjang5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="입금자명"
-        android:textColor="#000000"
-        android:textSize="25sp"/>
-
-    <EditText
-        android:id="@+id/mutongjang6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
-
-    <TextView
-        android:layout_marginTop="30dp"
-        android:id="@+id/mutongjang7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="입금하신 은행"
-        android:textColor="#000000"
-        android:textSize="25sp"/>
-
-    <EditText
-        android:id="@+id/mutongjang8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/tv_bank_detail"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text=" 입금 시 주문서에 작성된 입금자와 동일한 \n 성명으로 입금 부탁드립니다.\n\n 입금자가 다른 경우, 자동 입금 확인이 불가능\n 하므로 성명 이외에 글자는 되도록 사용하지 \n 않는 것이 좋습니다.\n
+\n 무통장 입금 결제가 진행되지 않을 시, 3일이 \n 지나면 자동 취소가 됩니다. \n\n 주문 후 3일(주말/공휴일) 이내 결제금액 입금 \n 시 정상 처리됩니다.
+\n\n 구매 전 항상 입금액을 확인해주시기 바랍니\n 다.\n\n 감사합니다."
+            android:textColor="#616060"
+            android:textSize="17dp" />
+        <Button
+            android:id="@+id/mutongjang_btn"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="이체 완료" />
 
 
+    </LinearLayout>
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="30dp"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_bank_num"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="계좌번호"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:textSize="17dp" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/mutongjang4"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:hint="ex) 211-100-211111" />-->
+    <!--    </LinearLayout>-->
+
+
+    <!--    <TextView-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:id="@+id/mutongjang5"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="입금자명"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="25sp"/>-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/mutongjang6"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"/>-->
+
+    <!--    <TextView-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:id="@+id/mutongjang7"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="입금하신 은행"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="25sp"/>-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/mutongjang8"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"/>-->
 
 
 
-    <Button
-        android:id="@+id/mutongjang_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="#A4C480"
-        android:text="무통장입금으로 결제하기" />
 
 </LinearLayout>
