@@ -188,6 +188,7 @@ public class Food extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent1=new Intent(getApplicationContext(), Payment.class);
                 intent1.putExtra("total_price", tv_price_total2.getText());//받은 값 Payment.java로 보냄
+                intent1.putExtra("kit_name", tv_kit_name_activity_food.getText());//상품이름 Payment.java로 보냄
                 startActivity(intent1);
                 Toast.makeText(getApplicationContext(), "상품을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
             }

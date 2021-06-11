@@ -18,7 +18,7 @@ import com.example.banhada.R;
 
 public class Payment extends AppCompatActivity {
 
-    TextView textView2, textView8, textView10;
+    TextView textView2, textView8, textView10, basket_name2, basket_price2;
     Button payment_btn, moreshopping_btn, change_shipping;
 
     @Override
@@ -44,10 +44,15 @@ public class Payment extends AppCompatActivity {
         payment_btn = findViewById(R.id.payment_btn);
         moreshopping_btn = findViewById(R.id.moreshopping_btn);
         change_shipping = findViewById(R.id.change_shipping);
+        basket_name2 = findViewById(R.id.basket_name2);
+        basket_price2 = findViewById(R.id.basket_price2);
 
         //결제금액 받아오기
-        Bundle extras=getIntent().getExtras();
-        final String total_price=extras.getString("total_price");
+        Bundle extras = getIntent().getExtras();
+        final String total_price = extras.getString("total_price");
+        final String kit_name = extras.getString("kit_name");
+        basket_name2.setText(kit_name);
+        basket_price2.setText(total_price);
 
         payment_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,9 +76,6 @@ public class Payment extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
 
 
     }

@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="결제"
+                android:text="장바구니"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </androidx.appcompat.widget.Toolbar>
@@ -92,56 +92,208 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
-            android:text="[주문 확인하기]"
+            android:text="[ 주문 확인 ]"
             android:textColor="#000000"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="79dp"
-            tools:layout_editor_absoluteY="102dp" />
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
-        <TableRow
-            android:id="@+id/tableRow"
-            android:layout_width="412dp"
-            android:layout_height="250dp"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="141dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/basket_date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="주문일자"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/basket_date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="2021/04/08 11:11:12"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/basket_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="상품이름"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/basket_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="미역국"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/basket_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="가격"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/basket_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="21000원"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/basket_material"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="재료"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/basket_material1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="돼지고기"
+            android:textColor="#4B4848"
+            android:textSize="13dp" />
+        <TextView
+            android:id="@+id/basket_material2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="김치"
+            android:textColor="#4B4848"
+            android:textSize="13dp" />
+        <TextView
+            android:id="@+id/basket_material3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="고추"
+            android:textColor="#4B4848"
+            android:textSize="13dp" />
+        <Button
+            android:id="@+id/moreshopping_btn"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style1"
+            android:text="더 쇼핑하기     >>"
+            android:textColor="#000000" />
+
+
+        <!--        <TableRow-->
+        <!--            android:id="@+id/tableRow"-->
+        <!--            android:layout_width="412dp"-->
+        <!--            android:layout_height="250dp"-->
+        <!--            tools:layout_editor_absoluteX="1dp"-->
+        <!--            tools:layout_editor_absoluteY="141dp" />-->
+
+
+
+        <!--        <TableRow-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="196dp" />-->
+
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:text="[내 배송지 정보]"
+            android:text="[ 현재 배송지 ]"
+            android:layout_marginTop="60dp"
             android:textColor="#000000"
-            android:textSize="20sp" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="196dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/basket_shipping1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:text="10112 서울시 서초구 서초동 12-3"
+            android:textColor="#4B4848"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/basket_shipping2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="101호"
+            android:textColor="#4B4848"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/basket_shipping3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="반해영"
+            android:textColor="#4B4848"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/basket_shipping4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="010-2222-3333"
+            android:textColor="#4B4848"
+            android:textSize="15dp" />
+        <Button
+            android:id="@+id/change_shipping"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style1"
+            android:text="배송지 변경"
+            android:textColor="#000000" />
 
-            <Button
-                android:id="@+id/change_shipping"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/button_style1"
-                android:text="배송지 변경"
-                android:textColor="#000000" />
 
-            <Button
-                android:id="@+id/moreshopping_btn"
-                android:layout_width="140dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/button_style1"
-                android:text="더 쇼핑하기     >>"
-                android:textColor="#000000" />
-        </LinearLayout>
+
     </LinearLayout>
 
     <Button
