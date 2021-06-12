@@ -14,7 +14,7 @@ import com.banhada.HomeActivity;
 import com.example.banhada.R;
 
 public class NormalUser_Login extends AppCompatActivity {
-    Button btn_login_complete;
+    Button btn_login_complete, find_id_pw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +29,20 @@ public class NormalUser_Login extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         btn_login_complete = findViewById(R.id.btn_login_complete);
+        find_id_pw = findViewById(R.id.find_id_pw);
 
         btn_login_complete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent2 = new Intent(NormalUser_Login.this, HomeActivity.class);
                 startActivity(intent2);
+            }
+        });
+        find_id_pw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(NormalUser_Login.this, FindIDPW.class);
+                startActivity(intent);
             }
         });
     }

@@ -22,8 +22,9 @@
         <activity android:name="com.banhada.mart.MartActivity" />
         <activity android:name="com.banhada.mart.Mart2Activity" />
         <activity android:name="com.banhada.mart.Mart3Activity" />
-        <activity android:name="com.banhada.product.Food" />
         <activity android:name="com.banhada.login.NaverLogin" />
+        <activity android:name="com.banhada.login.SignUp_Complete" />
+        <activity android:name="com.banhada.login.FindIDPW" />
         <activity android:name="com.banhada.login.NormalUser_Login" />
         <activity android:name="com.banhada.login.NormalUser_SignUp" />
         <activity android:name="com.banhada.payment.Payment_Phone" />
@@ -31,9 +32,9 @@
         <activity android:name="com.banhada.payment.Payment_CreditCard" />
         <activity android:name="com.banhada.payment.PaymentProcess2" />
         <activity android:name="com.banhada.payment.Payment" />
-        <activity android:name="com.banhada.HomeActivity" />
-        <activity android:name="com.banhada.login.SignUp_Complete" />
         <activity android:name="com.banhada.product.User_Product" />
+        <activity android:name="com.banhada.product.Food" />
+        <activity android:name="com.banhada.HomeActivity" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 
