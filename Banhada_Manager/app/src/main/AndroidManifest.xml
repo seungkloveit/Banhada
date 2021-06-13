@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.banhada_manager">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="com.banhada_manager.qna.QnA"></activity>
+        <activity android:name="com.banhada_manager.notice.NoticeSub" />
+        <activity android:name="com.banhada_manager.notice.Notice" />
+        <activity android:name="com.banhada_manager.Member.Member_management" />
+        <activity android:name="com.banhada_manager.memberlist.Member_Management" />
         <activity android:name="com.banhada_manager.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,10 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.banhada_manager.order.AdminOrderActivity"/>
-        <activity android:name="com.banhada_manager.mart.RegisteredMart_Admin"/>
-
+        <activity android:name="com.banhada_manager.order.AdminOrderActivity" />
+        <activity android:name="com.banhada_manager.mart.RegisteredMart_Admin" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

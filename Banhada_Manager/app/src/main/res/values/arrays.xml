@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="Sort">
+        <item>가입일순</item>
+        <item>아이디순</item>
+        <item>이름순</item>
+        <item>닉네임순</item>
+        <item>포인트순</item>
+    </string-array>
+
+    <string-array name="sch">
+        <item>아이디</item>
+        <item>이름</item>
+        <item>전화번호</item>
+    </string-array>
+    <string-array name="Sort2">
+        <item>상품</item>
+        <item>배송</item>
+        <item>취소/변경</item>
+        <item>환불</item>
+        <item>기타</item>
+    </string-array>
+
+
+</resources>

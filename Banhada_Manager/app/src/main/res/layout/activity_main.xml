@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.banhada_manager.MainActivity">
 
 
@@ -17,4 +18,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="관리자앱 마트관리화면" />
+
+    <Button
+        android:id="@+id/btn_memberinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원관리" />
+    <Button
+        android:id="@+id/btn_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="공지사항" />
+    <Button
+        android:id="@+id/btn_qna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1:1문의" />
 </LinearLayout>
