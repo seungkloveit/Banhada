@@ -4,4 +4,33 @@
         <item>재료1</item>
         <item>재료2</item>
     </string-array>
+    <string-array name="email">
+        <item>네이버</item>
+        <item>다음</item>
+        <item>한메일</item>
+        <item>구글</item>
+        <item>직접입력</item>
+    </string-array>
+    <string-array name="delivery">
+        <item>접수대기</item>
+        <item>주문접수</item>
+        <item>배송준비</item>
+        <item>배송중</item>
+        <item>배송완료</item>
+    </string-array>
+    <string-array name="Sort2">
+        <item>상품</item>
+        <item>배송</item>
+        <item>취소/변경</item>
+        <item>환불</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name="date">
+        <item>오늘</item>
+        <item>최근7일</item>
+        <item>최근15일</item>
+        <item>최근1개월</item>
+        <item>최근3개월</item>
+        <item>전체</item>
+    </string-array>
 </resources>

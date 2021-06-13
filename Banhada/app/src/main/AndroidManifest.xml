@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.banhada">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,8 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="com.banhada.mypage.QnA_write"></activity>
+        <activity android:name="com.banhada.mypage.Notice" />
+        <activity android:name="com.banhada.mypage.QnA" />
+        <activity android:name="com.banhada.mypage.Review" />
+        <activity android:name="com.banhada.mypage.Point" />
+        <activity android:name="com.banhada.mypage.delivery" />
+        <activity android:name="com.banhada.mypage.picklist" />
+        <activity android:name="com.banhada.mypage.MyPage" />
+        <activity android:name="com.banhada.mypage.InformationEdit" />
         <activity android:name="com.banhada.MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,6 +46,5 @@
         <activity android:name="com.banhada.product.Food" />
         <activity android:name="com.banhada.HomeActivity" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
