@@ -287,7 +287,10 @@
         android:layout_height="65dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
-        android:text="장바구니에 담기" />
+        android:background="#F21D1C1C"
+        android:text="장바구니 담기"
+        android:textSize="17dp"
+        android:textColor="#ffffff"/>
 
 </RelativeLayout>
 

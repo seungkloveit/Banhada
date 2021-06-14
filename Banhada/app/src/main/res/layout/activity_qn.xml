@@ -65,11 +65,11 @@
     <Button
         android:id="@+id/wrtbtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="65dp"
         android:layout_gravity="bottom"
         android:background="#F21D1C1C"
         android:text="작성하기"
         android:textColor="#ffffff"
-        android:textSize="20dp"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

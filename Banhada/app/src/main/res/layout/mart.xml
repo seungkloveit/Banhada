@@ -70,6 +70,8 @@
         android:layout_height="65dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
-        android:text="연결 완료"
+        android:background="#F21D1C1C"
+        android:text="연결완료"
+        android:textColor="#ffffff"
         android:textSize="18dp" />
 </RelativeLayout>

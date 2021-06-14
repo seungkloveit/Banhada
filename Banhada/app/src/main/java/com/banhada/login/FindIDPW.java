@@ -17,6 +17,7 @@ import com.example.banhada.R;
 public class FindIDPW extends TabActivity {
     TabHost tabHost;
     Button btn_login_complete, find_id_pw, btn_find_pw;
+    View dialogView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +47,10 @@ public class FindIDPW extends TabActivity {
         btn_find_pw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                dialogView=View.inflate(FindIDPW.this, R.layout.dialog_pwd, null);
                 AlertDialog.Builder dialog = new AlertDialog.Builder(FindIDPW.this);
                 dialog.setTitle("새 비밀번호 설정");
+                dialog.setView(dialogView);
                 dialog.setPositiveButton("확인", null);
                 dialog.setNegativeButton("취소", null);
                 dialog.show();

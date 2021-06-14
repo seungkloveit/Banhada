@@ -43,7 +43,7 @@
     <Button
         android:id="@+id/ntcbtn"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="65dp"
         android:background="#F21D1C1C"
         android:text="작성하기"
         android:textColor="#ffffff"

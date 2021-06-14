@@ -302,6 +302,9 @@
         android:layout_height="65dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
-        android:text="다음" />
+        android:background="#F21D1C1C"
+        android:textSize="18dp"
+        android:text="다음"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>
