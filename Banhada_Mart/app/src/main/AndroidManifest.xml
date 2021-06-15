@@ -19,6 +19,7 @@
         <activity android:name="com.banhada_mart.order.MartOrderActivity"/>
         <activity android:name="com.banhada_mart.myinfo.MartAdmin_MyInfo"/>
         <activity android:name="com.banhada_mart.myinfo.MartHaveMaterials"/>
+        <activity android:name="com.banhada_mart.myinfo.p0_signup"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 

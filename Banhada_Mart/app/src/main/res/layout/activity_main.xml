@@ -4,18 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.banhada_mart.MainActivity">
+    android:orientation="vertical">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
 
-    <Button
-        android:id="@+id/btn_mart_order"
-        android:layout_width="wrap_content"
+        <ImageButton
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_logout"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="飯 반 하다"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="마트앱 주문관리화면" />
-    <Button
-        android:id="@+id/btn_mart_myinfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="마트앱 내정보관리화면" />
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <Button
+            android:id="@+id/main_btn1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_style"
+            android:drawableTop="@drawable/ic_receipt"
+            android:paddingTop="10dp"
+            android:text="주문확인"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/main_btn2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_style"
+            android:drawableTop="@drawable/ic_add"
+            android:paddingTop="10dp"
+            android:text="상품등록"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/main_btn3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_style"
+            android:drawableTop="@drawable/ic_edit"
+            android:paddingTop="10dp"
+            android:text="내정보관리"
+            android:textSize="20dp" />
+    </LinearLayout>
+
 
 </LinearLayout>
