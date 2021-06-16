@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#A4C480"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="인기있는 상품"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:textColor="#e5e5e0"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:text="재료" />
+
+        <Button
+            android:id="@+id/cook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:textColor="#A4C480"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:text="요리" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#e6f6d9"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="5dp"
+                        android:text="1"/>
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#e6f6d9"
+                        android:textSize="20dp"
+                        android:paddingLeft="30dp"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/garbisize"
+                        android:text="떡갈비" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#e6f6d9"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="5dp"
+                        android:text="2"/>
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#e6f6d9"
+                        android:textSize="20dp"
+                        android:paddingLeft="30dp"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/mandusize"
+                        android:text="만두"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#e6f6d9"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="5dp"
+                        android:text="3"/>
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#e6f6d9"
+                        android:textSize="20dp"
+                        android:paddingLeft="30dp"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/ricesize"
+                        android:text="전복죽" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#e6f6d9"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="5dp"
+                        android:text="4"/>
+
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#e6f6d9"
+                        android:textSize="20dp"
+                        android:paddingLeft="30dp"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/saladsize"
+                        android:text="샐러드" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#e6f6d9"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="5dp"
+                        android:text="5"/>
+
+                    <Button
+                        android:id="@+id/btn5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#e6f6d9"
+                        android:textSize="20dp"
+                        android:paddingLeft="30dp"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/gimbapsize"
+                        android:text="김밥" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#e6f6d9"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="5dp"
+                        android:text="6"/>
+
+                    <Button
+                        android:id="@+id/btn6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#e6f6d9"
+                        android:textSize="20dp"
+                        android:paddingLeft="30dp"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/pastasize"
+                        android:text="파스타" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

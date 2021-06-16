@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="choose">
+        <item>-선택하세요-</item>
+        <item>재료</item>
+        <item>요리</item>
+    </string-array>
+
+</resources>
