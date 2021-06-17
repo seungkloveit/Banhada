@@ -19,16 +19,16 @@
 
             <ImageButton
                 android:id="@+id/location_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:background="@drawable/ic_location" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="100dp"
-                android:layout_marginRight="100dp"
+                android:layout_marginLeft="115dp"
+                android:layout_marginRight="115dp"
                 android:text="飯 반 하다"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -36,39 +36,39 @@
 
             <ImageButton
                 android:id="@+id/menu_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:background="@drawable/ic_menu" />
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/main_tab_btn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="105dp"
+            android:layout_height="48dp"
             android:background="@drawable/btn_style"
             android:text="Meal Kit" />
 
         <Button
             android:id="@+id/main_tab_btn2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
+            android:layout_width="115dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:background="@drawable/btn_style"
             android:text="인기있는 상품" />
 
         <Button
             android:id="@+id/main_tab_btn3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="115dp"
+            android:layout_height="48dp"
             android:background="@drawable/btn_style"
             android:text="내가 찜한 상품" />
     </LinearLayout>
@@ -78,7 +78,7 @@
         android:layout_width="350dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="30dp">
 
         <ImageView
             android:id="@+id/flip_food_btn1"
@@ -113,8 +113,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
         android:padding="5dp"
         android:text="오늘의 추천"
         android:textColor="#000000" />
@@ -129,7 +129,7 @@
             android:id="@+id/main_rcm_btn1"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="35dp"
             android:background="@drawable/food2" />
 
         <ImageButton
@@ -150,8 +150,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
         android:padding="5dp"
         android:text="카테고리"
         android:textColor="#000000" />
@@ -159,15 +159,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:orientation="horizontal"
+        android:gravity="center"
         android:padding="5dp">
 
         <ImageButton
             android:id="@+id/main_ctg_btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:background="@drawable/ic_food_korean" />
 
         <ImageButton
@@ -202,12 +201,14 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2px"
+        android:layout_marginTop="60dp"
         android:background="#000000" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         app:menu="@menu/bottm_nav" />
 
     <!--

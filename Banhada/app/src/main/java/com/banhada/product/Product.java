@@ -19,7 +19,7 @@ public class Product extends AppCompatActivity {
         Button cook = (Button) findViewById(R.id.cook);
         cook.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), popular_cook.class);
+                Intent intent = new Intent(getApplicationContext(), Cook.class);
                 startActivity(intent);
             }
         });

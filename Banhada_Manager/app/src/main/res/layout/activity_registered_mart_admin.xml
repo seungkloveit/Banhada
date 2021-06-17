@@ -29,22 +29,23 @@
 
         <TextView
             android:id="@+id/mart"
-            android:layout_width="90dp"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
             android:text="마트이름"
-            android:textColor="#000000"
-            android:textSize="20dp" />
+            android:textSize="15dp" />
 
         <EditText
-            android:layout_width="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="230dp"
             android:layout_height="wrap_content" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
             android:text="조회"
-            android:textSize="16dp" />
+            android:textSize="14dp" />
 
     </LinearLayout>
 
@@ -66,7 +67,6 @@
                 android:stretchColumns="*">
 
                 <TableRow
-                    android:background="#ffffff"
                     android:padding="5dp">
 
                     <TextView
@@ -98,7 +98,6 @@
                 </TableRow>
 
                 <TableRow
-                    android:background="#ffffff"
                     android:padding="5dp">
 
                     <TextView
@@ -133,7 +132,6 @@
                 </TableRow>
 
                 <TableRow
-                    android:background="#ffffff"
                     android:padding="5dp">
 
                     <TextView
@@ -168,7 +166,6 @@
                 </TableRow>
 
                 <TableRow
-                    android:background="#ffffff"
                     android:padding="5dp">
 
                     <TextView
@@ -203,7 +200,6 @@
                 </TableRow>
 
                 <TableRow
-                    android:background="#ffffff"
                     android:padding="5dp">
 
                     <TextView
@@ -238,7 +234,6 @@
                 </TableRow>
 
                 <TableRow
-                    android:background="#ffffff"
                     android:padding="5dp">
 
                     <TextView
@@ -273,7 +268,6 @@
                 </TableRow>
 
                 <TableRow
-                    android:background="#ffffff"
                     android:padding="5dp">
 
                     <TextView
@@ -308,7 +302,6 @@
                 </TableRow>
 
                 <TableRow
-                    android:background="#ffffff"
                     android:padding="5dp">
 
                     <TextView
@@ -343,7 +336,6 @@
                 </TableRow>
 
                 <TableRow
-                    android:background="#ffffff"
                     android:padding="5dp">
 
                     <TextView

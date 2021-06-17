@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
 
     <RelativeLayout
@@ -15,9 +14,9 @@
 
         <ImageButton
             android:id="@+id/logout_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
             android:background="@drawable/ic_logout" />
 
         <TextView
@@ -32,9 +31,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:padding="30dp">
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,20 +44,20 @@
                 android:id="@+id/main_btn1"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:paddingTop="10dp"
                 android:background="@drawable/btn_style"
                 android:drawableTop="@drawable/ic_group"
+                android:paddingTop="10dp"
                 android:text="회원관리"
                 android:textSize="20dp"
-                android:layout_marginRight="20dp"/>
+                android:layout_marginRight="15dp"/>
 
             <Button
                 android:id="@+id/main_btn2"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:paddingTop="10dp"
                 android:background="@drawable/btn_style"
                 android:drawableTop="@drawable/ic_mart"
+                android:paddingTop="10dp"
                 android:text="마트관리"
                 android:textSize="20dp" />
         </LinearLayout>
@@ -68,27 +66,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/main_btn3"
                 android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:paddingTop="10dp"
+                android:layout_height="170dp"
                 android:background="@drawable/btn_style"
                 android:drawableTop="@drawable/ic_receipt"
+                android:paddingTop="15dp"
+                android:layout_marginRight="15dp"
                 android:text="주문관리"
-                android:textSize="20dp"
-                android:layout_marginRight="20dp"/>
+                android:textSize="20dp" />
 
             <Button
                 android:id="@+id/main_btn4"
                 android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:paddingTop="10dp"
+                android:layout_height="170dp"
                 android:background="@drawable/btn_style"
                 android:drawableTop="@drawable/ic_setting"
+                android:paddingTop="15dp"
                 android:text="문의/공지"
                 android:textSize="20dp" />
         </LinearLayout>
