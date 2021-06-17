@@ -30,7 +30,8 @@
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <ScrollView
             android:layout_width="match_parent"
@@ -67,7 +68,10 @@
                             android:layout_width="260dp"
                             android:layout_height="40dp"
                             android:text="상품종류"
-                            android:textSize="24dp">
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold">
                         </TextView>
                     </LinearLayout>
 
@@ -101,7 +105,10 @@
                             android:layout_width="260dp"
                             android:layout_height="40dp"
                             android:text="재료명"
-                            android:textSize="24dp">
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold">
                         </TextView>
                     </LinearLayout>
 
@@ -138,7 +145,10 @@
                             android:layout_width="260dp"
                             android:layout_height="40dp"
                             android:text="재료이미지"
-                            android:textSize="24dp">
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold">
                         </TextView>
                     </LinearLayout>
 
@@ -184,7 +194,10 @@
                             android:layout_width="260dp"
                             android:layout_height="40dp"
                             android:text="재료설명"
-                            android:textSize="24dp">
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold">
                         </TextView>
                     </LinearLayout>
 
@@ -221,7 +234,10 @@
                             android:layout_width="260dp"
                             android:layout_height="40dp"
                             android:text="가격"
-                            android:textSize="24dp">
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold">
                         </TextView>
                     </LinearLayout>
 
@@ -259,7 +275,10 @@
                             android:layout_width="260dp"
                             android:layout_height="40dp"
                             android:text="수량"
-                            android:textSize="24dp">
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold">
                         </TextView>
                     </LinearLayout>
 
@@ -283,6 +302,8 @@
                             android:id="@+id/plus"
                             android:layout_width="32dp"
                             android:layout_height="32dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
                             app:srcCompat="@drawable/plus" />
 
                         <ImageView

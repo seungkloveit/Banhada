@@ -15,7 +15,6 @@
         <activity android:name="com.banhada_manager.notice.NoticeSub" />
         <activity android:name="com.banhada_manager.notice.Notice" />
         <activity android:name="com.banhada_manager.Member.Member_management" />
-        <activity android:name="com.banhada_manager.memberlist.Member_Management" />
         <activity android:name="com.banhada_manager.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,6 +24,7 @@
         </activity>
         <activity android:name="com.banhada_manager.order.AdminOrderActivity" />
         <activity android:name="com.banhada_manager.mart.RegisteredMart_Admin" />
+        <activity android:name="com.banhada_manager.HomeActivity"/>
     </application>
 
 </manifest>

@@ -2,9 +2,10 @@ package com.banhada_mart;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.os.Handler;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -21,46 +22,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //ActionBar actionBar =getSupportActionBar();
-        //actionBar.hide();
 
-        Button main_btn1 = (Button) findViewById(R.id.main_btn1);
-        Button main_btn2 = (Button) findViewById(R.id.main_btn2);
-        Button main_btn3 = (Button) findViewById(R.id.main_btn3);
+        startLoading();
+    }// onCreate()..
 
-        main_btn1.setOnClickListener(new View.OnClickListener() {                                        // 주문관리
+    private void startLoading() {
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MartOrderActivity.class);
+            public void run() {
+
+                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(intent);
+                finish();   //현재 액티비티 종료
             }
-        });
-
-        main_btn2.setOnClickListener(new View.OnClickListener() {                                       // 상품추가(아직 없음)
-            @Override                                                                                   // 임시로 회원가입창 해놓음
-            public void onClick(View view) {
-                  Intent intent = new Intent(getApplicationContext(), p0_signup.class);
-                  startActivity(intent);
-            }
-        });
-
-        main_btn3.setOnClickListener(new View.OnClickListener() {                                       // 내정보관리
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MartAdmin_MyInfo.class);
-                startActivity(intent);
-            }
-        });
-
-        ImageButton logout_btn = (ImageButton) findViewById(R.id.logout_btn);                       // 로그아웃
-        logout_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"로그아웃되었습니다.",Toast.LENGTH_SHORT).show();
-                //Intent intent = new Intent(getApplicationContext(), p0_logout.class);
-                //startActivity(intent);
-            }
-        });
-
+        }, 1800); // 화면에 Logo 1.8초간 보이기
     }
-}
+}// MainActivity Class..
+
