@@ -27,7 +27,7 @@
         android:id="@+id/imageView"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        app:srcCompat="@drawable/banhada_logo2"
+        app:srcCompat="@drawable/banhada_logo"
         android:layout_gravity="center"
         android:layout_marginTop="70dp"
         tools:layout_editor_absoluteX="90dp"
