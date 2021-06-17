@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.banhada.mypage.QnA_write"></activity>
+        <activity android:name="com.banhada.product.popular_product" />
+        <activity android:name="com.banhada.mypage.QnA_write" />
         <activity android:name="com.banhada.mypage.Notice" />
         <activity android:name="com.banhada.mypage.QnA" />
         <activity android:name="com.banhada.mypage.Review" />
