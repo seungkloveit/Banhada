@@ -14,11 +14,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.banhada.mypage.MyPage;
 import com.banhada.mypage.Notice;
-import com.banhada.mypage.QnA;
 import com.banhada.mypage.delivery;
+import com.banhada.mypage.picklist;
 import com.banhada.payment.Payment;
 import com.banhada.product.Food;
 import com.banhada.product.User_Product;
+import com.banhada.product.popular_product;
 import com.banhada.shipping.ShippingActivity;
 import com.example.banhada.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -115,9 +116,6 @@ public class HomeActivity extends AppCompatActivity {
                         } else if (menuItem.getItemId() == R.id.menu_3) {
                             Intent intent = new Intent(getApplicationContext(), delivery.class);       // 배송조회
                             startActivity(intent);
-                        } else if (menuItem.getItemId() == R.id.menu_4) {
-                            Intent intent = new Intent(getApplicationContext(), QnA.class);       // 1:1 문의
-                            startActivity(intent);
                         } else {
                             Intent intent = new Intent(getApplicationContext(), MainActivity.class);       //로그아웃 - 기능 나중에 추가
                             startActivity(intent);
@@ -143,7 +141,7 @@ public class HomeActivity extends AppCompatActivity {
         mtb2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), User_Product.class);                // 인기상품 ( 확인필요)
+                Intent intent = new Intent(getApplicationContext(), popular_product.class);                // 인기상품 ( 확인필요)
                 startActivity(intent);
             }
         });
@@ -151,7 +149,7 @@ public class HomeActivity extends AppCompatActivity {
         mtb3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Food.class);                // 내가 찜한
+                Intent intent = new Intent(getApplicationContext(), picklist.class);                // 내가 찜한 상품
                 startActivity(intent);
             }
         });

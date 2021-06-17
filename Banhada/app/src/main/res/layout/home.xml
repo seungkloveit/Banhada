@@ -42,174 +42,188 @@
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/main_tab_btn1"
-            android:layout_width="105dp"
-            android:layout_height="48dp"
-            android:background="@drawable/btn_style"
-            android:text="Meal Kit" />
-
-        <Button
-            android:id="@+id/main_tab_btn2"
-            android:layout_width="115dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:background="@drawable/btn_style"
-            android:text="인기있는 상품" />
-
-        <Button
-            android:id="@+id/main_tab_btn3"
-            android:layout_width="115dp"
-            android:layout_height="48dp"
-            android:background="@drawable/btn_style"
-            android:text="내가 찜한 상품" />
-    </LinearLayout>
-
-    <ViewFlipper
-        android:id="@+id/viewFlipper"
-        android:layout_width="350dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp">
-
-        <ImageView
-            android:id="@+id/flip_food_btn1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:background="@drawable/food1"
-            android:scaleType="fitCenter" />
-        <ImageView
-            android:id="@+id/flip_food_btn2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:background="@drawable/food2"
-            android:scaleType="fitCenter" />
-        <ImageView
-            android:id="@+id/flip_food_btn3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:background="@drawable/food3"
-            android:scaleType="fitCenter" />
-        <ImageView
-            android:id="@+id/flip_food_btn4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:background="@drawable/food4"
-            android:scaleType="fitCenter" />
-    </ViewFlipper>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:padding="5dp"
-        android:text="오늘의 추천"
-        android:textColor="#000000" />
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-        <ImageButton
-            android:id="@+id/main_rcm_btn1"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginLeft="35dp"
-            android:background="@drawable/food2" />
-
-        <ImageButton
-            android:id="@+id/main_rcm_btn2"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/food3" />
-
-        <ImageButton
-            android:id="@+id/main_rcm_btn3"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/food4" />
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="35dp"
-        android:padding="5dp"
-        android:text="카테고리"
-        android:textColor="#000000" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:padding="5dp">
-
-        <ImageButton
-            android:id="@+id/main_ctg_btn1"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_food_korean" />
+            android:orientation="vertical" >
 
-        <ImageButton
-            android:id="@+id/main_ctg_btn2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/ic_food_japanese" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/main_ctg_btn3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/ic_food_chinese" />
+                <Button
+                    android:id="@+id/main_tab_btn1"
+                    android:layout_width="105dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_style"
+                    android:text="Meal Kit" />
 
-        <ImageButton
-            android:id="@+id/main_ctg_btn4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/ic_food_western" />
+                <Button
+                    android:id="@+id/main_tab_btn2"
+                    android:layout_width="115dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/btn_style"
+                    android:text="인기있는 상품" />
 
-        <ImageButton
-            android:id="@+id/main_ctg_btn5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/ic_food_etc" />
-    </LinearLayout>
+                <Button
+                    android:id="@+id/main_tab_btn3"
+                    android:layout_width="115dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_style"
+                    android:text="내가 찜한 상품" />
+            </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2px"
-        android:layout_marginTop="60dp"
-        android:background="#000000" />
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        app:menu="@menu/bottm_nav" />
+                <ImageView
+                    android:id="@+id/flip_food_btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/food1"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:id="@+id/flip_food_btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/food2"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:id="@+id/flip_food_btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/food3"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:id="@+id/flip_food_btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/food4"
+                    android:scaleType="fitCenter" />
+            </ViewFlipper>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:padding="5dp"
+                android:text="오늘의 추천"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/main_rcm_btn1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/food2" />
+
+                <ImageButton
+                    android:id="@+id/main_rcm_btn2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/food3" />
+
+                <ImageButton
+                    android:id="@+id/main_rcm_btn3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/food4" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="35dp"
+                android:padding="5dp"
+                android:text="카테고리"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageButton
+                    android:id="@+id/main_ctg_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_food_korean" />
+
+                <ImageButton
+                    android:id="@+id/main_ctg_btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_food_japanese" />
+
+                <ImageButton
+                    android:id="@+id/main_ctg_btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_food_chinese" />
+
+                <ImageButton
+                    android:id="@+id/main_ctg_btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_food_western" />
+
+                <ImageButton
+                    android:id="@+id/main_ctg_btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_food_etc" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginTop="60dp"
+                android:background="#000000" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:menu="@menu/bottm_nav" />
+        </LinearLayout>
+    </ScrollView>
 
     <!--
         <LinearLayout
