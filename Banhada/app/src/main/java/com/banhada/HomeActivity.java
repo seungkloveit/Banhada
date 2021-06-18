@@ -12,6 +12,7 @@ import android.widget.ViewFlipper;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.banhada.mart.MartActivity;
 import com.banhada.mypage.MyPage;
 import com.banhada.mypage.Notice;
 import com.banhada.mypage.delivery;
@@ -26,10 +27,20 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity {
     ViewFlipper vf;
+    Button btn_mart_search_main;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
+
+        btn_mart_search_main=findViewById(R.id.btn_mart_search_main);
+        btn_mart_search_main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MartActivity.class);       //마트연결
+                startActivity(intent);
+            }
+        });
 
         // 뷰플리퍼 관련
         vf = (ViewFlipper) findViewById(R.id.viewFlipper);

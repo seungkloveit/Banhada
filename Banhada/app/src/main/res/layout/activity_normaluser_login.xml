@@ -67,6 +67,7 @@
             android:layout_height="100dp"
             android:text="로그인"
             android:textSize="15dp" />
+        <!--android:background="#DDDDFF"-->
     </LinearLayout>
     <Button
         android:id="@+id/find_id_pw"

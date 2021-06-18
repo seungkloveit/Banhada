@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="근처 마트 탐색"
+            android:text="마트 연결"
             android:textColor="#000000"
             android:textSize="20dp" />
     </androidx.appcompat.widget.Toolbar>
