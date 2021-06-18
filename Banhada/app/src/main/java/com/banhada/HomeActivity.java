@@ -74,6 +74,7 @@ public class HomeActivity extends AppCompatActivity {
         // 1. 액티비티가 아닌 프래그먼트를 이용한다.
         // 2. 모든 화면에 바텀 네비게이션을 추가한다.
         // 3. 딱히 다른 화면에서 안써도 된다. = 현상유지
+        // 홈으로 이동하기, 검색, 장바구니는 모든 화면에서 사용 가능해야 하는 기능이기 때문에 모든 화면에 바텀 네비게이션을 추가하는게 좋을거 같음 (형찬)
         BottomNavigationView bnv = (BottomNavigationView) findViewById(R.id.bn);
         bnv.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

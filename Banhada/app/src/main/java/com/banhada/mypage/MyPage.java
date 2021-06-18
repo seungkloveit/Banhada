@@ -97,6 +97,15 @@ public class MyPage extends AppCompatActivity {
             }
         });
 
+        final Button info_use = (Button) findViewById(R.id.info_use);
+
+        info_use.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),Information_Use.class);
+                startActivity(intent);
+            }
+        });
 
     }
     @Override

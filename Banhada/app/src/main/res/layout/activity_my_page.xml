@@ -229,7 +229,7 @@
                         android:textSize="20dp" />
 
                     <Button
-                        android:id="@+id/bt17"
+                        android:id="@+id/info_use"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
