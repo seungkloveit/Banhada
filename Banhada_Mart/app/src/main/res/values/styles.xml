@@ -17,5 +17,9 @@
         <item name="colorAccent">#A4C480</item>
         <item name="colorControlNormal">#A4C480</item>
     </style>
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#A4C480</item>
+        <item name="colorControlNormal">#A4C480</item>
+    </style>
 
 </resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:ignore="NamespaceTypo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#A4C480"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ID / PW 찾기"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/tabid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_find_id_email"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:hint="이메일 주소 입력"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/btn_find_id_submit"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/button_style2"
+                        android:text="메일 전송"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_certify_email1"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:hint="인증번호 입력"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/btn_certify_email1"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/button_style2"
+                        android:text="확인"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_find_id"
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_style2"
+                    android:text="아이디  찾기"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tabpw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edt_find_pw_email_id"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="50dp"
+                    android:hint="가입된 아이디 입력"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/edt_find_pw_email"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:hint="이메일 주소 입력"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/btn_find_pw_submit"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/button_style2"
+                        android:text="메일 전송"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_certify_email2"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:hint="인증번호 입력"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/btn_certify_email2"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/button_style2"
+                        android:text="확인"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_find_pw"
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_style2"
+                    android:text="다음"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.banhada_mart.Login.LoginLayout;
 import com.banhada_mart.myinfo.MartAdmin_MyInfo;
 import com.banhada_mart.myinfo.p0_signup;
 import com.banhada_mart.order.MartOrderActivity;
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                Intent intent = new Intent(getApplicationContext(), LoginLayout.class);
                 startActivity(intent);
                 finish();   //현재 액티비티 종료
             }

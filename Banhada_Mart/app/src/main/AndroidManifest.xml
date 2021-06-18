@@ -22,6 +22,10 @@
         <activity android:name="com.banhada_mart.myinfo.p0_signup"/>
         <activity android:name="com.banhada_mart.HomeActivity"/>
         <activity android:name="com.banhada_mart.Product.RegistrationActivity"/>
+        <activity android:name="com.banhada_mart.Login.LoginLayout"/>
+        <activity android:name="com.banhada_mart.Login.NormalUser_Login"/>
+        <activity android:name="com.banhada_mart.Login.NormalUser_SignUp"/>
+        <activity android:name="com.banhada_mart.Login.FindIDPW"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 
