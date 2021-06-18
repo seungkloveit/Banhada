@@ -50,7 +50,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (vf.getDisplayedChild() == 0) {
-                    Intent intent = new Intent(getApplicationContext(), Food.class);       //음식1
+                    Intent intent = new Intent(getApplicationContext(), Food.class);       //음식1 >> 디비 구축하면 해당상품 가격 가져와서 여기에서 putExtra로 Food에 보내기!
                     startActivity(intent);
                 }
                 if (vf.getDisplayedChild() == 1) {
@@ -83,7 +83,7 @@ public class HomeActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 if (menuItem.getItemId() == R.id.bn_item2) {
-                    Intent intent = new Intent(getApplicationContext(), Payment.class);           // 카트
+                    Intent intent = new Intent(getApplicationContext(), Payment.class);           // 카트 >> 마찬가지로 디비 구축하면 해당상품 가격 가져와서 여기에서 putExtra로 Payment에 보내기!
                     startActivity(intent);
                 }
                 if (menuItem.getItemId() == R.id.bn_item3) {
@@ -170,7 +170,7 @@ public class HomeActivity extends AppCompatActivity {
         rcm_imgBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Food.class);            //추천음식1
+                Intent intent = new Intent(getApplicationContext(), Food.class);            //추천음식1 >> 마찬가지로 디비 구축하면 해당상품 가격 가져와서 여기에서 putExtra로 Food에 보내기!
                 startActivity(intent);
             }
         });
