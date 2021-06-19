@@ -56,6 +56,8 @@ public class HomeActivity extends AppCompatActivity {
         logout_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
                 Toast.makeText(getApplicationContext(),"로그아웃되었습니다.",Toast.LENGTH_SHORT).show();
                 //Intent intent = new Intent(getApplicationContext(), p0_logout.class);
                 //startActivity(intent);
