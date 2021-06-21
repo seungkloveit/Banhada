@@ -123,6 +123,14 @@
             android:text="SKT"
             android:textSize="17dp"
             android:theme="@style/CustomRadioButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="LGU+"
+            android:textSize="17dp"
+            android:theme="@style/CustomRadioButton" />
     </RadioGroup>
 
     <TextView
