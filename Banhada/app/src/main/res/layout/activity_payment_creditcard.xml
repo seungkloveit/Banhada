@@ -108,12 +108,14 @@
         <EditText
             android:id="@+id/edt1"
             android:layout_width="75dp"
+            android:maxLength="4"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp" />
 
         <EditText
             android:id="@+id/edt1_2"
             android:layout_width="75dp"
+            android:maxLength="4"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:inputType="textPassword" />
@@ -121,12 +123,14 @@
         <EditText
             android:id="@+id/edt1_3"
             android:layout_width="75dp"
+            android:maxLength="4"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp" />
 
         <EditText
             android:id="@+id/edt1_4"
             android:layout_width="75dp"
+            android:maxLength="4"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:inputType="textPassword" />

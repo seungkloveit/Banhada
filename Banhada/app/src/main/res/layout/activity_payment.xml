@@ -307,4 +307,29 @@
         android:text="다음"
         android:textColor="#ffffff" />
 
+
+
+ <!-- 테이블 행 클릭 시 해당 행의 값 가져오기)(제이쿼리,부트스트랩)-->
+    <!-- $(" ").click(function(){
+        var str=" "
+        var tdArr = new Array(); //배열 선언
+
+        //현재 클릭된 Row (tr)
+        var tr=$(this);
+        var td=tr.children();
+
+        //tr.text()는 클릭된 Row 즉 tr에 있는 모든 값을 가져온다
+        console.log("클릭한 Row의 모든 데이터:"+tr.text());
+
+        //반복문을 이용하여 배열에 값을 담아 사용
+        td.each(function(i){
+            tdArr.push(td.eq(i).text());
+           });
+
+        console.log("배열에 담긴 값: " + tdArr); -->
+
+
+
+
+
 </RelativeLayout>

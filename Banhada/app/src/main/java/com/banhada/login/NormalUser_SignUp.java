@@ -12,15 +12,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.banhada.MainActivity;
 import com.banhada.product.Food;
+import com.banhada.shipping.ShippingActivity;
+import com.banhada.shipping.ShippingListItem;
 import com.example.banhada.R;
 
 public class NormalUser_SignUp extends AppCompatActivity {
     View view;
     TextView textView7, user_name, user_email, user_phone, userAddress;
-    EditText name_tv, email_tv, phone_tv;
+    EditText name_tv, email_tv, phone_tv,tv_id;
     Button button_address_search, button13, sign_up_see1, sign_up_see2, sign_up_see3;
 
     @Override
@@ -47,6 +50,12 @@ public class NormalUser_SignUp extends AppCompatActivity {
         sign_up_see1 = findViewById(R.id.sign_up_see1);
         sign_up_see2 = findViewById(R.id.sign_up_see2);
         sign_up_see3 = findViewById(R.id.sign_up_see3);
+
+
+
+
+
+
 //
 //        button_address_search.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -142,6 +151,46 @@ public class NormalUser_SignUp extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent2 = new Intent(NormalUser_SignUp.this, SignUp_Complete.class);
                 startActivity(intent2);
+
+//                아이디 중복확인(백엔드연결)
+//                String userId=tv_id.getText.toString();
+//                if(validate){
+//                return;
+//                }
+//                if(userId.equals("")){
+//                        AlertDialog.Builder builder=new AlertDialog.Builder(Activity.this); 이 액티비티는 어디로 가야 할지 ..
+//                        dialog=builder.setMessage("아이디(이메일주소)는 빈칸일 수 없습니다").setPositiveButton("확인",null).create();
+//                        return;
+//            }
+//
+//               Response.Listener<String> responseListener=new Response.Listener<String>() {
+//                  @Override
+//                    public void onResponse(String response) {
+//                       try {
+//                          JSONObject jsonResponse=new JSONObject(response);
+//                          boolean success=jsonResponse.getBoolean("success");
+//                          AlertDialog.Builder builder=new AlertDialog.Builder(Activity.this);
+//
+//                          if(success){
+//                            dialog=builder.setMessage("사용할 수 있는 아이디입니다.");setPositiveButton("확인",null).create();
+//                            dialog.show();
+//                            tv_id.setEnabled(false);
+//                            valid=true;
+//                            validateButton.setText("확인");
+//                          }
+//                          else{
+//                            dialog=builder.setMessage("사용할 수 없는 아이디입니다.").setNegativeButton("확인",null).create();
+//                            dialog.show();
+//                            }
+//                         } catch(JSONException e) {
+//                            e.printStackTrace();
+//                        }
+//                     }
+//            };
+//           ValidateRequest validateRequest = new ValidateRequest(userId,responseListener);
+//           RequestQueue queue = Volley.newRequestQueue(Activity.this);
+//           queue.add(validateRequest);
+
             }
         });
 
@@ -152,7 +201,10 @@ public class NormalUser_SignUp extends AppCompatActivity {
             case android.R.id.home: {
                 finish();
             }
+
         }
+
+
         return true;
     }
 }
